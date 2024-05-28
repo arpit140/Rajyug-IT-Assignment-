@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Book New Appointment</h1>
+    <form id="appointmentForm">
+        <label for="patientName">Name of patient:</label>
+        <input type="text" id="patientName" name="patientName" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="contactNumber">Contact number:</label>
+        <input type="text" id="contactNumber" name="contactNumber" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="selectDoctor">Select doctor:</label>
+        <select id="selectDoctor" name="selectDoctor" required>
+            <option value="Dr. Vikash Kumar">Dr. Vikash Kumar</option>
+            <option value="Dr. Sheela Dubey">Dr. Sheela Dubey</option>
+            <option value="Dr. Arpit Singh">Dr. Arpit Singh</option>
+            <option value="Dr. Neelam Pandey">Dr. Neelam Pandey</option>
+            <option value="Dr. Riya Tiwari">Dr. Riya Tiwari</option>
+            <option value="Dr. Sikander Khan">Dr. Sikander Khan</option>
+        </select><br><br>
+
+        <label for="appointmentDate">Appointment date:</label>
+        <input type="datetime-local" id="appointmentDate" name="appointmentDate" required><br><br>
+
+        <label for="appointmentTitle">Appointment title:</label>
+        <input type="text" id="appointmentTitle" name="appointmentTitle" required><br><br>
+
+        <label><input type="checkbox" id="walkInAppointment" name="walkInAppointment"> Walk-in appointment</label><br><br>
+
+        <h2>Vital Information:</h2>
+        <label for="bp">BP:</label>
+        <input type="text" id="bp" name="bp" required><br><br>
+
+        <label for="height">Height:</label>
+        <input type="text" id="height" name="height" required><br><br>
+
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight" required><br><br>
+
+        <label for="spo2">SPO2:</label>
+        <input type="text" id="spo2" name="spo2" required><br><br>
+
+        <label for="temp">Temperature:</label>
+        <input type="text" id="temp" name="temp" required><br><br>
+
+        <label for="pulseRate">Pulse Rate:</label>
+        <input type="text" id="pulseRate" name="pulseRate" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
